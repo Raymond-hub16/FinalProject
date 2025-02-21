@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('age');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
